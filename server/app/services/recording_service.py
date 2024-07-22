@@ -9,7 +9,7 @@ import whisper
 
 
 MODEL = 'gemma2'
-stt = whisper.load_model("large-v3", device="cuda")
+stt = whisper.load_model("base.en", device="cuda")
 
 NOTE_TEMPLATE = """
 {
