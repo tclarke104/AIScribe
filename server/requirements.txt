@@ -1,0 +1,6 @@
+flask
+flask_cors
+flask_sqlalchemy
+langchain_community
+langchain
+transformers
