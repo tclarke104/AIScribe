@@ -20,6 +20,12 @@ def transcribe_recording():
 
     text = rs.transcribe(save_path)
 
+    return {'transcription': text}
+
+@bp.route('/note', methods=['POST'])
+def generate_note():
+    text = request.json['transcription']
+
     note = rs.get_llm_response(text)
 
-    return {'transcription': text, 'note': note}
+    return {'note': note}
